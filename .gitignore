@@ -82,6 +82,7 @@ profile_default/
 ipython_config.py
 
 # pyenv
+*.csv
 .python-version
 
 # pipenv
@@ -127,3 +128,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# pycharm
+.idea/
