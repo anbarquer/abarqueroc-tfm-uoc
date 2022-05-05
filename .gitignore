@@ -131,3 +131,6 @@ dmypy.json
 
 # pycharm
 .idea/
+
+# output models
+models/
