@@ -14679,13 +14679,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </li>
 <li><a href="#chapter8">8. Persistencia de modelos</a><ul>
 <li><a href="#section_8_1">8.1 Tamaño en memoria</a></li>
-<li><a href="#section_8_2">8.2 Precisión</a></li>
 </ul>
 </li>
-<li><a href="#chapter9">9. Interpretación de los resultados</a><ul>
-<li><a href="#section_9_1">9.1 Logistic Regression + ROS</a></li>
-<li><a href="#section_9_2">9.2 K-Nearest Neighbors + ROS</a></li>
-<li><a href="#section_9_3">9.3 Resto de clasificadores</a></li>
+<li><a href="#chapter9">9. Precisión</a></li>
+<li><a href="#chapter10">10. Interpretación de los resultados</a><ul>
+<li><a href="#section_10_1">10.1 Logistic Regression + ROS</a></li>
+<li><a href="#section_10_2">10.2 K-Nearest Neighbors + ROS</a></li>
+<li><a href="#section_10_3">10.3 Resto de clasificadores</a></li>
 </ul>
 </li>
 </ul>
@@ -17767,7 +17767,7 @@ Saving Isolation Forest as ./models/isolation_forest.joblib...
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="8.2-Precisi%C3%B3n-">8.2 Precisi&#243;n <a class="anchor" id="section_8_2" /><a class="anchor-link" href="#8.2-Precisi%C3%B3n-">&#182;</a></h2><p>En este apartado extraeremos la precisión de cada modelo para hacer para hacer comparativa con los resultados del apartado <a href="#section_7_3_3">7.3.3</a>.</p>
+<h2 id="9.-Precisi%C3%B3n-">9. Precisi&#243;n <a class="anchor" id="chapter8" /><a class="anchor-link" href="#9.-Precisi%C3%B3n-">&#182;</a></h2><p>En este apartado extraeremos la precisión de cada modelo para hacer para hacer comparativa con los resultados del apartado <a href="#section_7_3_3">7.3.3</a>.</p>
 
 </div>
 </div>
@@ -17868,8 +17868,8 @@ Saving Isolation Forest as ./models/isolation_forest.joblib...
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="9.-Interpretaci%C3%B3n-de-los-resultados-">9. Interpretaci&#243;n de los resultados <a class="anchor" id="chapter9" /><a class="anchor-link" href="#9.-Interpretaci%C3%B3n-de-los-resultados-">&#182;</a></h2><p>Todos los modelos resultantes de este informe pueden ser descargados desde <a href="https://drive.google.com/file/d/1embbUDoYAt52FJhCl2dyPCU6X8FuPcWF/view?usp=sharing">este</a> enlace. Analizando los resultados de los apartados <a href="#section_7_3_3">7.3.3</a>, <a href="#section_8_1">8.1</a> <a href="#section_8_2">8.2</a> se pueden plantear dos soluciones:</p>
-<h3 id="9.1-Logistic-Regression-+-ROS-">9.1 Logistic Regression + ROS <a class="anchor" id="section_9_1" /><a class="anchor-link" href="#9.1-Logistic-Regression-+-ROS-">&#182;</a></h3><ul>
+<h2 id="10.-Interpretaci%C3%B3n-de-los-resultados-">10. Interpretaci&#243;n de los resultados <a class="anchor" id="chapter10" /><a class="anchor-link" href="#10.-Interpretaci%C3%B3n-de-los-resultados-">&#182;</a></h2><p>Todos los modelos resultantes de este informe pueden ser descargados desde <a href="https://drive.google.com/file/d/1embbUDoYAt52FJhCl2dyPCU6X8FuPcWF/view?usp=sharing">este</a> enlace. Analizando los resultados de los apartados <a href="#section_7_3_3">7.3.3</a>, <a href="#section_8_1">8.1</a> <a href="#section_8_2">8.2</a> se pueden plantear dos soluciones:</p>
+<h3 id="10.1-Logistic-Regression-+-ROS-">10.1 Logistic Regression + ROS <a class="anchor" id="section_10_1" /><a class="anchor-link" href="#10.1-Logistic-Regression-+-ROS-">&#182;</a></h3><ul>
 <li>Con esta solución se maximizará la detección de verdaderos positivos, esto es, la cantidad de transacciones fraudulentas detectadas.</li>
 <li>Presenta una mayor tasa de falsos positivos pero tratándose de transacciones legítimas detectadas como fraudulentas no supone una pérdida de la calidad de detección.</li>
 <li>Este modelo tiene menor precisión pero como se explicó en el apartado <a href="#section_2_4">2.4</a> no es una medida a tener en cuenta.</li>
@@ -17877,8 +17877,8 @@ Saving Isolation Forest as ./models/isolation_forest.joblib...
 <li>El tamaño del modelo final tendrá menor peso en memoria facilitando su puesta en producción y coste de mantenimiento.</li>
 <li><strong>Como conclusión final:</strong> esta solución es la recomendada dado que es la que más transacciones fraudulentas detecta.</li>
 </ul>
-<h3 id="9.2-K-Nearest-Neighbors-+-ROS-">9.2 K-Nearest Neighbors + ROS <a class="anchor" id="section_9_2" /><a class="anchor-link" href="#9.2-K-Nearest-Neighbors-+-ROS-">&#182;</a></h3><ul>
-<li>Con esta solución se minimizar falsos positivos a costa de menos verdaderos positivos. La cantidad de transacciones fraudulentas detectadas será menor que la del apartado <a href="#section_9-1">9.1</a>.</li>
+<h3 id="10.2-K-Nearest-Neighbors-+-ROS-">10.2 K-Nearest Neighbors + ROS <a class="anchor" id="section_10_2" /><a class="anchor-link" href="#10.2-K-Nearest-Neighbors-+-ROS-">&#182;</a></h3><ul>
+<li>Con esta solución se minimizar falsos positivos a costa de menos verdaderos positivos. La cantidad de transacciones fraudulentas detectadas será menor que la del apartado <a href="#section_10_1">10.1</a>.</li>
 <li>Presenta una menor tasa de falsos positivos por lo que hará que el sistema sea más rígido y tenga mayor precisión.</li>
 <li>Este modelo es el más preciso. Como se explicó en el apartado <a href="#section_2_4">2.4</a> no es una medida a tener en cuenta.</li>
 <li>Tiene un tiempo de entrenamiento muy alto.</li>
@@ -17886,7 +17886,7 @@ Saving Isolation Forest as ./models/isolation_forest.joblib...
 <li>Su puesta en producción presenta mayor coste.</li>
 <li><strong>Como conclusión final:</strong> es una solución válida si se desea tener un sistema muy preciso pero tiene el riesgo de detectar menos transacciones fraudulentas.</li>
 </ul>
-<h3 id="9.3-Resto-de-modelos-">9.3 Resto de modelos <a class="anchor" id="section_9_3" /><a class="anchor-link" href="#9.3-Resto-de-modelos-">&#182;</a></h3><ul>
+<h3 id="10.3-Resto-de-modelos-">10.3 Resto de modelos <a class="anchor" id="section_10_3" /><a class="anchor-link" href="#10.3-Resto-de-modelos-">&#182;</a></h3><ul>
 <li>No han presentado unos buenos resultados  en el apartado <a href="#section_7_3_3">7.3.3</a> como para tenerlos en cuenta en este informe. Aunque en la literatura este tipo de clasificadores han funcionado mejor para este caso de uso no han tenido la suficiente calidad como para considerarlos una solución válida.</li>
 <li>DecisionTree tiene un tiempo de entrenamiento y búsqueda de hiperparámetros muy alto.</li>
 <li>Isolation Forest tiene un tiempo de entrenamiento relativamente corto, no necesita preprocesado de datos y además genera un modelo que ocupa poco en memoria. Puede que en otro tipo de escenarios este algoritmo tenga una mejor relación de coste / eficiencia.</li>
