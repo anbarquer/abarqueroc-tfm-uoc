@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "abarqueroc-tfm-uoc"
-version = "0.0.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+version = "1.0.0"
+description = "Credit fraud detection on unbalanced datasets"
+authors = ["Antonio D. Barquero Cuadrado <abarqueroc@uoc.edu>"]
 
 [tool.poetry.dependencies]
 python = "3.9"
