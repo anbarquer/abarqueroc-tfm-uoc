@@ -14671,7 +14671,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li><a href="#section_7_2">7.2 Isolation Forest</a></li>
 <li><a href="#section_7_3">7.3 Búsqueda de hiperparámetros y cross validation</a><ul>
 <li><a href="#section_7_3_1">7.3.1  KNN, LogisticRegression y Decision Tree</a></li>
-<li><a href="#section_7_3_2">7.3.2  Isolation FOrest</a></li>
+<li><a href="#section_7_3_2">7.3.2  Isolation Forest</a></li>
 <li><a href="#section_7_3_3">7.3.3 Métricas y matrices de confusión</a></li>
 </ul>
 </li>
@@ -17875,7 +17875,7 @@ Saving Isolation Forest as ./models/isolation_forest.joblib...
 <li>Este modelo tiene menor precisión pero como se explicó en el apartado <a href="#section_2_4">2.4</a> no es una medida a tener en cuenta.</li>
 <li>Tiene un tiempo de entrenamiento relativamente pequeño en caso de que el juego de datos aumente. Mejor escalabilidad.</li>
 <li>El tamaño del modelo final tendrá menor peso en memoria facilitando su puesta en producción y coste de mantenimiento.</li>
-<li>Como conclusión final esta solución es la recomendada dado que es la que más transacciones fraudulentas detecta.</li>
+<li><strong>Como conclusión final:</strong> esta solución es la recomendada dado que es la que más transacciones fraudulentas detecta.</li>
 </ul>
 <h3 id="9.2-K-Nearest-Neighbors-+-ROS-">9.2 K-Nearest Neighbors + ROS <a class="anchor" id="section_9_2" /><a class="anchor-link" href="#9.2-K-Nearest-Neighbors-+-ROS-">&#182;</a></h3><ul>
 <li>Con esta solución se minimizar falsos positivos a costa de menos verdaderos positivos. La cantidad de transacciones fraudulentas detectadas será menor que la del apartado <a href="#section_9-1">9.1</a>.</li>
@@ -17884,7 +17884,7 @@ Saving Isolation Forest as ./models/isolation_forest.joblib...
 <li>Tiene un tiempo de entrenamiento muy alto.</li>
 <li>El modelo final ocupa demasiado. En caso de tener juegos de datos grandes puede llegar a ocasionar problemas de escalabilidad.</li>
 <li>Su puesta en producción presenta mayor coste.</li>
-<li>Como conclusión final: es una solución válida si se desea tener un sistema muy preciso pero tiene el riesgo de detectar menos transacciones fraudulentas.</li>
+<li><strong>Como conclusión final:</strong> es una solución válida si se desea tener un sistema muy preciso pero tiene el riesgo de detectar menos transacciones fraudulentas.</li>
 </ul>
 <h3 id="9.3-Resto-de-modelos-">9.3 Resto de modelos <a class="anchor" id="section_9_3" /><a class="anchor-link" href="#9.3-Resto-de-modelos-">&#182;</a></h3><ul>
 <li>No han presentado unos buenos resultados  en el apartado <a href="#section_7_3_3">7.3.3</a> como para tenerlos en cuenta en este informe. Aunque en la literatura este tipo de clasificadores han funcionado mejor para este caso de uso no han tenido la suficiente calidad como para considerarlos una solución válida.</li>
