@@ -10,7 +10,7 @@ You can get the data from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/credi
 
 * Install [pyenv](https://github.com/pyenv/pyenv)
 * Install global / local interpreter with `Python v3.9.7`. `pyenv global 3.9.7`.
-* Create virtual env. `python3 -m venv env 66 . env/bin/activate`
+* Create virtual env. `python3 -m venv env && . env/bin/activate`
 * Install poetry. `python3 -m pip install poetry`
 * Install dependencies. `poetry install`
 * Run `jupyter notebook --ip 0.0.0.0 --no-browser --allow-root`
