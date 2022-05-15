@@ -5,7 +5,7 @@ ADD poetry.lock .
 ADD pyproject.toml .
 ADD credit-card-fraud.ipynb .
 
-RUN python3 -m pip install poetry runipy && \
+RUN python3 -m pip install poetry && \
     poetry config virtualenvs.create false &&  \
     poetry install
 
