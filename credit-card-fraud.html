@@ -14643,7 +14643,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </li>
 <li><a href="#chapter2">2. Análisis descriptivo</a><ul>
 <li><a href="#section_2_1">2.1 Resumen del juego de datos</a></li>
-<li><a href="#section_2_2">2.2 Preprocesamiento de datos</a></li>
 <li><a href="#section_2_2">2.2 Balance de la muestra</a></li>
 <li><a href="#section_2_3">2.3 Distribución de Time y Amount</a></li>
 <li><a href="#section_2_4">2.4 Conclusiones del análisis</a></li>
@@ -15657,7 +15656,7 @@ class="
 </ul>
 </li>
 <li>Debido al gran desbalanceo de los datos no se podrá utilizar <em>accuracy</em> como métrica ya que podría llevarnos a resultados erróneos.</li>
-<li>Hay que optimizar los modelos usando <em>f1-score</em>, <em>precision</em> y <em>recall</em></li>
+<li>Hay que optimizar los modelos usando <em>f1-score</em>, <em>precision</em> y <em>recall</em>.</li>
 <li>Las matrices de confusión nos mostrarán qué modelo resultante es el más eficiente.</li>
 <li>La partición de los datos utilizará un 80% para entrenamiento y un 20% para pruebas.</li>
 </ul>
@@ -16408,10 +16407,8 @@ class="
 </ul>
 <h3 id="5.1-Selecci%C3%B3n-de-algoritmos-undersampling-">5.1 Selecci&#243;n de algoritmos undersampling <a class="anchor" id="section_5_1" /><a class="anchor-link" href="#5.1-Selecci%C3%B3n-de-algoritmos-undersampling-">&#182;</a></h3><p>Este tipo de técnicas realiza un procesado de los datos de tal forma que balancea la muestra original teniendo en cuenta la clase menos representada. Esto significa que las clases más representadas verán reducida la cantidad de filas para adecuarse en número a las clases menos representadas. En concreto vamos a utilizar los siguientes algoritmos:</p>
 <ul>
-<li>Random undersampling<ul>
+<li>Random undersampling</li>
 <li>NearMiss</li>
-</ul>
-</li>
 </ul>
 <h3 id="5.2-Selecci%C3%B3n-de-algoritmos-oversampling-">5.2 Selecci&#243;n de algoritmos oversampling <a class="anchor" id="section_5_2" /><a class="anchor-link" href="#5.2-Selecci%C3%B3n-de-algoritmos-oversampling-">&#182;</a></h3><p>Este tipo de técnicas realiza un procesado de los datos de tal forma que balancea la muestra original teniendo en cuenta la clase más representada representada. Esto significa que las clases menos representadas aumentarán la cantidad de filas para adecuarse en número a las clases más representadas. En concreto vamos a utilizar los siguientes algoritmos:</p>
 <ul>
@@ -17767,7 +17764,7 @@ Saving Isolation Forest as ./models/isolation_forest.joblib...
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="9.-Precisi%C3%B3n-">9. Precisi&#243;n <a class="anchor" id="chapter8" /><a class="anchor-link" href="#9.-Precisi%C3%B3n-">&#182;</a></h2><p>En este apartado extraeremos la precisión de cada modelo para hacer para hacer comparativa con los resultados del apartado <a href="#section_7_3_3">7.3.3</a>.</p>
+<h2 id="9.-Precisi%C3%B3n-">9. Precisi&#243;n <a class="anchor" id="chapter9" /><a class="anchor-link" href="#9.-Precisi%C3%B3n-">&#182;</a></h2><p>En este apartado extraeremos la precisión de cada modelo para hacer para hacer comparativa con los resultados del apartado <a href="#section_7_3_3">7.3.3</a>.</p>
 
 </div>
 </div>
@@ -17868,7 +17865,7 @@ Saving Isolation Forest as ./models/isolation_forest.joblib...
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="10.-Interpretaci%C3%B3n-de-los-resultados-">10. Interpretaci&#243;n de los resultados <a class="anchor" id="chapter10" /><a class="anchor-link" href="#10.-Interpretaci%C3%B3n-de-los-resultados-">&#182;</a></h2><p>Todos los modelos resultantes de este informe pueden ser descargados desde <a href="https://drive.google.com/file/d/1embbUDoYAt52FJhCl2dyPCU6X8FuPcWF/view?usp=sharing">este</a> enlace. Analizando los resultados de los apartados <a href="#section_7_3_3">7.3.3</a>, <a href="#section_8_1">8.1</a> <a href="#section_8_2">8.2</a> se pueden plantear dos soluciones:</p>
+<h2 id="10.-Interpretaci%C3%B3n-de-los-resultados-">10. Interpretaci&#243;n de los resultados <a class="anchor" id="chapter10" /><a class="anchor-link" href="#10.-Interpretaci%C3%B3n-de-los-resultados-">&#182;</a></h2><p>Todos los modelos resultantes de este informe pueden ser descargados desde <a href="https://drive.google.com/file/d/1embbUDoYAt52FJhCl2dyPCU6X8FuPcWF/view?usp=sharing">este</a> enlace. Analizando los resultados de los apartados <a href="#section_7_3_3">7.3.3</a>, <a href="#section_8_1">8.1</a> y <a href="#chapter9">9</a> se pueden plantear dos soluciones:</p>
 <h3 id="10.1-Logistic-Regression-+-ROS-">10.1 Logistic Regression + ROS <a class="anchor" id="section_10_1" /><a class="anchor-link" href="#10.1-Logistic-Regression-+-ROS-">&#182;</a></h3><ul>
 <li>Con esta solución se maximizará la detección de verdaderos positivos, esto es, la cantidad de transacciones fraudulentas detectadas.</li>
 <li>Presenta una mayor tasa de falsos positivos pero tratándose de transacciones legítimas detectadas como fraudulentas no supone una pérdida de la calidad de detección.</li>
